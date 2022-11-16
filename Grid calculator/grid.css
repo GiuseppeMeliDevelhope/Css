@@ -1,0 +1,163 @@
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+
+body{
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+.calculator{
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 5px;
+   
+}
+
+.calculator input{
+    background-color:rgb(69, 67, 67) ;
+    border: none;
+    width: 100%;
+    padding: 20px;
+    border-radius: 7px;
+    text-align: right;
+    font-size: 40px;
+    color: white;
+    
+
+
+}
+
+.buttons{
+  
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "header10 header11 header12 header13"
+      "main7 main8 main9 footerequal"
+      "main4 main5 main6 footerequal"
+      "main1 main2 main3 footerequal"
+      "footer0 footerp footerac footerequal"; 
+
+
+}
+
+button{
+    background-color:rgb(223, 241, 255) ;
+   border : 2px solid rgb(89, 110, 123);
+   padding: 20px;
+   color: black;
+   font-size: 24px;
+
+}
+
+
+
+
+.calc-btn10{
+ grid-area: header10;
+ background-color:lightsteelblue;
+ border-left: none;
+ border-top: none;
+
+}
+.calc-btn11{
+ grid-area: header11;
+ background-color:lightsteelblue;
+ border-top: none;
+ 
+}
+.calc-btn12{
+  grid-area: header12;
+  background-color:lightsteelblue;
+  border-top: none;
+  
+}
+.calc-btn13{
+    grid-area: header13;
+    background-color:lightsteelblue;
+    border-right: none;
+    border-top: none;
+   
+}
+
+.calc-btn7{
+    grid-area: main7;
+    border-left: none;
+
+}
+
+.calc-btn8{
+    grid-area: main8;
+}
+
+.calc-btn9{
+    grid-area: main9;
+}
+
+
+
+.calc-btn4{
+    grid-area: main4;
+    border-left: none;
+}
+
+.calc-btn5{
+    grid-area: main5;
+}
+
+.calc-btn6{
+    grid-area: main6;
+}
+
+
+.calc-btn1{
+    grid-area: main1;
+    border-left: none;
+}
+
+.calc-btn2{
+    grid-area: main2;
+}
+
+.calc-btn3{
+    grid-area: main3;
+}
+
+
+.calc-btn0{
+    grid-area: footer0;
+    border-bottom: none;
+    border-left: none;
+}
+
+.calc-btnp{
+    grid-area: footerp;
+    border-bottom: none;
+}
+
+.calc-btnac{
+    grid-area: footerac;
+    border-bottom: none;
+}
+
+.calc-btn-equal{
+    grid-area: footerequal;
+    background-color: rgb(255, 102, 117);
+    border-bottom-right-radius: 5px;
+    border-bottom: none;
+    border-right: none;
+}
+
