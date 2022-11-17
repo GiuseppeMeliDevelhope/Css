@@ -1,0 +1,157 @@
+*{
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: rgb(22, 22, 22);
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+
+
+}
+
+.nav-links a{
+   color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+
+.list{
+    display: flex;
+    gap: 16px;
+    font-size: 21px;
+}
+
+.list li:hover{
+    background-color: green ;
+    border-radius: 5px;
+    
+}
+
+.list li{
+    padding: 5px 14px;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-list{
+    background-color: green;
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+}
+
+.dropdown-list li + li{
+    margin-top: 10px;
+}
+
+.dropdown-list li{
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+.dropdown-list li:hover{
+    background-color: green;
+}
+
+.dropdown:hover .dropdown-list{
+    display: block;
+}
+
+button{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 6px;
+    margin-left: 9px;
+    margin-bottom: 1px;
+}
+
+button:hover{
+    background-color: green;
+    color: white;
+    border-radius: 8px;
+}
+
+input[type=text]{
+    padding-top:3px ;
+    padding-bottom:3px ;
+    border-radius: 8px;
+    
+}
+
+
+input[type=checkbox]{
+    display: none;
+
+}
+
+.hamburger{
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+@media(max-width:768px) {
+    .list{
+      display: none;
+      background-color: green;
+      right: 0;
+      left: 0;
+      text-align: center;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      padding-left: 0;
+      padding-right: 0;
+      position: absolute;
+
+    }
+
+.list li:hover{
+    display: inline-block;
+    background-color: green;
+    
+}
+
+.list li+li{
+    margin-top: 10px;
+}
+
+input[type=checkbox]:checked ~ .list{
+    display: block;
+}
+
+.hamburger{
+    display: block;
+}
+
+.dropdown-list{
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+}
+
+.dropdown-list li:hover{
+    background-color: green;
+}
+}
+
